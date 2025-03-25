@@ -39,7 +39,7 @@ swiperConfigs.forEach(config => {
 });
 const swiper = new Swiper(".swiper-container", {
     slidesPerView: 2,  // يظهر 3 تقييمات في نفس الوقت
-    spaceBetween: .5,  // المسافة بين التقييمات
+    spaceBetween: 10,  // المسافة بين التقييمات
     centeredSlides: true,  // يجعل العنصر النشط في المنتصف
     loop: true,
     autoplay: {
