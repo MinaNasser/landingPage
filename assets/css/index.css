@@ -140,6 +140,7 @@ body {
     padding: 12px 30px;
     border-radius: 30px;
     transition: 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .service-btn:hover {
