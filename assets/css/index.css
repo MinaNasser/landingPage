@@ -504,3 +504,22 @@ body {
         transform: translateY(0);
     }
 }
+/* جعل صور Swiper متجاوبة مع كل الشاشات */
+.tiktok-swiper , .twitter-swiper, .instagram-swiper, .youtube-swiper, .google-maps-swiper .swiper-slide img {
+    width: 100%; /* يجعل الصورة تتناسب مع عرض الـ div */
+    max-width: 100%; /* يمنع الصورة من التمدد */
+    height: auto; /* الحفاظ على الأبعاد النسبية */
+    object-fit: cover; /* يمنع تشوه الصورة */
+    border-radius: 10px; /* إضافة زوايا مستديرة */
+}
+
+/* تعديل ارتفاع الشرائح في الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .tiktok-swiper, .twitter-swiper, .instagram-swiper, .youtube-swiper, .google-maps-swiper .swiper-slide {
+        height: 200px; /* تحديد ارتفاع ثابت مناسب */
+    }
+    
+    .tiktok-swiper, .twitter-swiper, .instagram-swiper, .youtube-swiper, .google-maps-swiper .swiper-slide img {
+        height: 100%; /* يجعل الصورة تملأ السلايد بالكامل */
+    }
+}
