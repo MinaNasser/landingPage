@@ -91,6 +91,7 @@ body {
 
 .service-section {
     padding: 50px 0;
+    margin: 15px;
 }
 
 .swiper {
@@ -147,7 +148,7 @@ body {
 }
 
 .social-icons a {
-    color: #00C9FF;
+    color: var(--primary-color);
     margin: 0 10px;
     font-size: 24px;
     text-decoration: none;
@@ -287,7 +288,7 @@ body {
 
 .features-subtitle {
     font-size: 20px;
-    color: #00C9FF;
+    color: var(--primary-color);
     margin-bottom: 40px;
 }
 
@@ -324,7 +325,7 @@ body {
 
 .feature-text {
     font-size: 16px;
-    color: #00C9FF;
+    color: var(--primary-color);
 }
 
 .gold-text {
@@ -445,7 +446,6 @@ body {
     background: #fff;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(255, 180, 0, 0.2);
     text-align: center;
     max-width: 300px;
     margin: auto;
@@ -455,7 +455,6 @@ body {
 /* لما يكون التقييم نشط (swiper-slide-active) */
 .swiper-slide-active .feedback-card {
     transform: scale(1.1); /* تكبير البطاقة */
-    box-shadow: 0 10px 30px rgba(255, 180, 0, 0.5); /* ظل أقوى */
 }
 
 /* نص التقييم */
