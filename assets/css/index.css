@@ -1,6 +1,6 @@
 :root {
     --background-color: #0f1030;
-    --primary-color: #fbbf24;
+    --primary-color: #f4b60b;
     --secondary-color: #0B0C21;
     --text-color: #ffffff;
 }
@@ -444,7 +444,7 @@ body {
 
 /* تصميم بطاقة التقييم */
 .feedback-card {
-    background: #fff;
+    background: var(--background-color);
     padding: 30px;
     border-radius: 15px;
     text-align: center;
@@ -462,7 +462,7 @@ body {
 .feedback-text {
     font-style: italic;
     margin-bottom: 10px;
-    color: #555;
+    color: #ffffff;
     font-size: 18px;
 }
 
@@ -470,7 +470,7 @@ body {
 .feedback-client-name {
     font-weight: bold;
     margin: 10px 0;
-    color: #000;
+    color: #ffffff;
     font-size: 20px;
 }
 
@@ -504,6 +504,17 @@ body {
         transform: translateY(0);
     }
 }
+@media (max-width: 768px) {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .feedback-card {
+        width: 90%;
+        padding: 20px;
+    }
+}   
 /* جعل صور Swiper متجاوبة مع كل الشاشات */
 .tiktok-swiper , .twitter-swiper, .instagram-swiper, .youtube-swiper, .google-maps-swiper .swiper-slide img {
     width: 100%; /* يجعل الصورة تتناسب مع عرض الـ div */
