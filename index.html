@@ -1,89 +1,343 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تم إيقاف الخدمة</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            background-color: #f8d7da;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            font-family: 'Tajawal', sans-serif;
-        }
-        .card {
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
-            width: 90%;
-            animation: fadeIn 0.8s ease-in-out;
-        }
-        .icon {
-            font-size: 50px;
-            color: #dc3545;
-            animation: shake 1s infinite alternate;
-        }
-        .countdown {
-            font-size: 20px;
-            font-weight: bold;
-            color: #dc3545;
-            margin-top: 10px;
-        }
-        .btn {
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            transform: scale(1.05);
-        }
+    <title>صديق المشاهير - خدمات وسائل التواصل الاجتماعي</title>
+    <!-- add icon  in title -->
+    <link rel="icon" href="./assets/Img/logo2.png" type="image/x-icon">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes shake {
-            from { transform: rotate(-5deg); }
-            to { transform: rotate(5deg); }
-        }
-    </style>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
+
 <body>
-    <div class="card">
-        <h2 class="text-danger"><i class="fas fa-exclamation-triangle icon"></i></h2>
-        <h2 class="text-danger">تم إيقاف الخدمة</h2>
-        <p>عذرًا، لقد تم إيقاف خدمتك بسبب عدم سداد المبالغ المستحقة. يُرجى الدفع لإعادة تفعيلها.</p>
-        
-        <h2 class="text-danger mt-3">Service Suspended</h2>
-        <p>Sorry, your service has been suspended due to non-payment. Please make a payment to restore access.</p>
+    <!-- Add  big image beging of page  -->
 
-        <p class="countdown">سيتم تحويلك للدفع خلال <span id="timer">10</span> ثوانٍ...</p>
+    <header class="header">
+        <div class=" text-center">
+            <div class="row justify-content-center align-items-center">
+                <!-- صورة الهيدر -->
+                <div class="col-lg-12 col-md-8 col-12">
+                    <img src="./assets/Img/landing.jpg" alt="صديق المشاهير" class="img-fluid">
+                </div>
+                <!-- زر الخدمات -->
+                <div class="col-12 mt-4">
+                    <a href="https://thefamoutyt.com/" target="_blank" class="btn service-btn">تسوق الان </a>
+                </div>
+                <!-- العناوين -->
 
-        <a href="#" class="btn btn-success"><i class="fas fa-credit-card"></i> 💳 دفع الآن</a>
-        <a href="#" class="btn btn-primary"><i class="fas fa-phone"></i> 📞 تواصل مع الدعم</a>
-        <button class="btn btn-secondary mt-3" onclick="cancelRedirect()">❌ إيقاف التوجيه</button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="hero-section">
+        <div class="container text-center">
+
+            <!-- TikTok Section -->
+            <section id="tiktok-services" class="service-section">
+                <div class="container">
+                    <div class="card tiktok-card p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="mb-4" style="color: #f4b60b;">خدمات تيك توك</h2>
+                                <p class="text-white">احصل على محتوى إبداعي وإستراتيجيات فعالة لنمو قناتك على تيك
+                                    توك</p>
+                                <a href="https://thefamoutyt.com/%D8%AA%D9%8A%D9%83-%D8%AA%D9%88%D9%83/c1138184439"
+                                    class="btn service-btn mb-4">اكتشف الخدمات</a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="swiper tiktok-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="./assets/Img/tektok1.webp"
+                                                alt="TikTok Service 1"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/tektok2.webp"
+                                                alt="TikTok Service 2"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/tektok3.webp"
+                                                alt="TikTok Service 3"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/tektok3.webp"
+                                                alt="TikTok Service 3"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <!-- <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Twitter Section -->
+            <section id="twitter-services" class="service-section">
+                <div class="container">
+                    <div class="card twitter-card p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 order-2">
+                                <h2 class="mb-4" style="color: #f4b60b;">خدمات تويتر</h2>
+                                <p class="text-white mb-4">زد تفاعلك وانتشارك على منصة تويتر مع استراتيجيات محتوى متميزة
+                                </p>
+                                <a href="https://thefamoutyt.com/%D8%AA%D9%88%D9%8A%D8%AA%D8%B1/c1108265690"
+                                    class="btn service-btn">اكتشف الخدمات</a>
+                            </div>
+                            <div class="col-md-6 order-1">
+                                <div class="swiper twitter-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="./assets/Img/twetter1.webp"
+                                                alt="Twitter Service 1"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/twetter2.webp"
+                                                alt="Twitter Service 2"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/twetter3.webp"
+                                                alt="Twitter Service 3"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <!-- <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Instagram Section -->
+            <section id="instagram-services" class="service-section">
+                <div class="container">
+                    <div class="card instagram-card p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="mb-4" style="color: #f4b60b;">خدمات انستقرام</h2>
+                                <p class="text-white mb-4">تحسين محتواك وزيادة متابعيك مع خدمات انستقرام المتخصصة</p>
+                                <!-- in small screens add to a button margin bottom 20px use bootstrap class  -->
+                                <a href="https://thefamoutyt.com/%D8%A7%D9%86%D8%B3%D8%AA%D9%82%D8%B1%D8%A7%D9%85/c1379664350"
+                                    class="btn service-btn ">اكتشف الخدمات</a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="swiper instagram-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="./assets/Img/inst1.webp"
+                                                alt="Instagram Service 1"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/inst2.webp"
+                                                alt="Instagram Service 2"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/inst3.webp"
+                                                alt="Instagram Service 3"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <!-- <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- YouTube Section -->
+            <section id="youtube-services" class="service-section">
+                <div class="container">
+                    <div class="card youtube-card p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 order-2">
+                                <h2 class="mb-4" style="color: #f4b60b;">خدمات يوتيوب</h2>
+                                <p class="text-white mb-4">تطوير قناتك على يوتيوب وزيادة المشاهدات والاشتراكات</p>
+                                <a href="https://thefamoutyt.com/%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8/c1773144100"
+                                    class="btn service-btn">اكتشف الخدمات</a>
+                            </div>
+                            <div class="col-md-6 order-1">
+                                <div class="swiper youtube-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="./assets/Img/you1.webp"
+                                                alt="YouTube Service 1"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/you2.webp"
+                                                alt="YouTube Service 2"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/you3.png"
+                                                alt="YouTube Service 3"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <!-- <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Google Maps Section -->
+            <section id="google-maps-services" class="service-section">
+                <div class="container">
+                    <div class="card google-maps-card p-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h2 class="mb-4" style="color: #f4b60b;">خدمات جوجل ماب</h2>
+                                <p class="text-white mb-4">تحسين ظهورك على خرائط جوجل وزيادة التفاعل مع عملائك</p>
+                                <a href="https://thefamoutyt.com/%D8%AC%D9%88%D8%AC%D9%84-%D9%85%D8%A7%D8%A8/c97918241"
+                                    class="btn service-btn">اكتشف الخدمات</a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="swiper google-maps-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><img src="./assets/Img/map.webp"
+                                                alt="Google Maps Service 1"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/map.webp"
+                                                alt="Google Maps Service 2"></div>
+                                        <div class="swiper-slide"><img src="./assets/Img/map.webp"
+                                                alt="Google Maps Service 3"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <!-- <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
-    <script>
-        let seconds = 10;
-        let countdown = setInterval(() => {
-            document.getElementById("timer").textContent = --seconds;
-            if (seconds <= 0) {
-                clearInterval(countdown);
-                window.location.href = "#"; // تأكد من استبداله برابط الدفع الفعلي
-            }
-        }, 1000);
+    <section class="features-section">
+        <h2 class="features-title">مميزات المتجر</h2>
+        <p class="features-subtitle">أفضل متجر في السعودية</p>
 
-        function cancelRedirect() {
-            clearInterval(countdown);
-            document.querySelector(".countdown").innerHTML = "<span style='color:green;'>تم إيقاف التوجيه التلقائي.</span>";
-        }
-    </script>
+        <div class="features-container">
+            <!-- Feature 1: Multiple Payment Methods -->
+            <div class="feature-card">
+                <i class="fas fa-wallet feature-icon"></i>
+                <h3 class="feature-title">طرق دفع متعددة</h3>
+                <p class="feature-text">نوفر لكم طرق دفع متعددة وامنة وسهلة الاستخدام</p>
+            </div>
+
+            <!-- Feature 2: High Quality -->
+            <div class="feature-card">
+                <i class="fas fa-medal feature-icon"></i>
+                <h3 class="feature-title">الجودة العالية</h3>
+                <p class="feature-text gold-text">نقدم أفضل الخدمات وبأسعار مميزة</p>
+            </div>
+
+            <!-- Feature 3: Punctuality -->
+            <div class="feature-card">
+                <i class="fas fa-clock feature-icon"></i>
+                <h3 class="feature-title">الدقة في المواعيد</h3>
+                <p class="feature-text">نرد على استفساراتكم في اسرع وقت ممكن وفي اي وقت</p>
+            </div>
+        </div>
+    </section>
+    <section class="client-feedback-section">
+        <h2 class="section-title">تجارب العملاء</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                    <div class="feedback-card">
+                        <img src="./assets/icon/1.png" alt="الدوسري فرحان" class="feedback-client-img">
+                        <p class="feedback-text">"والله شكراً على التعامل الممتاز وطلبي ما تعدا ٣ دقائق"</p>
+                        <div class="feedback-rating">★★★★★</div>
+                        <h4 class="feedback-client-name">الدوسري فرحان</h4>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+                    <div class="feedback-card">
+                        <img src="./assets/icon/2.png" alt="أميرة الزهراني" class="feedback-client-img">
+                        <p class="feedback-text">"متجر سريع ومفيد للعملاء"</p>
+                        <div class="feedback-rating">★★★★★</div>
+                        <h4 class="feedback-client-name">أميرة الزهراني</h4>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                    <div class="feedback-card">
+                        <img src="./assets/icon/3.jpg" alt="محمد الحمداني" class="feedback-client-img">
+                        <p class="feedback-text">"متجر سريع ومفيد للعملاء"</p>
+                        <div class="feedback-rating">★★★★★</div>
+                        <h4 class="feedback-client-name">محمد الحمداني</h4>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+    <a href="https://api.whatsapp.com/send/?phone=966552389624&text&type=phone_number&app_absent=0"
+        class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- معلومات عنا -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <h5>معلومات عنا</h5>
+                    <p>نحن شركة متخصصة في تقديم خدمات وسائل التواصل الاجتماعي لتعزيز حضورك الرقمي وزيادة التفاعل مع
+                        جمهورك.</p>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#tiktok-services" class="footer-link">خدمات تيك توك</a></li>
+                        <li><a href="#twitter-services" class="footer-link">خدمات تويتر</a></li>
+                        <li><a href="#instagram-services" class="footer-link">خدمات إنستغرام</a></li>
+                        <li><a href="#youtube-services" class="footer-link">خدمات يوتيوب</a></li>
+                        <li><a href="#google-maps-services" class="footer-link">خدمات جوجل مابس</a></li>
+                    </ul>
+                </div>
+
+                <!-- تابعنا على السوشيال ميديا -->
+                <div class="col-lg-4 col-md-12 text-center">
+                    <h5>تابعنا</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- حقوق النشر -->
+            <div class="text-center mt-3">
+                <p>&copy; 2025 جميع الحقوق محفوظة. صديق المشاهير.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap 5 JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Swiper.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- ScrollReveal.js CDN -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
