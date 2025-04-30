@@ -3,7 +3,7 @@
 This is a responsive front-end landing page developed for a Saudi company that specializes in providing social media services, including TikTok, Twitter, Instagram, YouTube, and Google Maps enhancements. The landing page aims to showcase the company’s services, client testimonials, store features, and contact information in a clean, user-friendly interface.
 
 ## 🌐 Live Preview
-[Coming Soon] – Hosted link (if available)
+[[Coming Soon] – Hosted link (if available)](https://landing-page-seven-lemon-53.vercel.app/)
 
 ---
 
